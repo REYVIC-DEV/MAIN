@@ -1,11 +1,14 @@
 *{
     margin: 0;
+    /* border: dashed red 1px; */
+    font-family: 'Courier New', Courier, monospace;
 }
 html,
 body{
     height: 100%;
     overflow: hidden;
-    background-color: black;
+    /* background-color: black; */
+    background-color: azure;
 }
 
 body{
@@ -16,6 +19,8 @@ body{
 
 .container{
     display: flex;
+
+    gap: 1em;
 
     height: 90%;
     width: 90%;
@@ -40,8 +45,7 @@ body{
     flex: 25%;
 }
 
-.col1 .row1,
-.col1 .row2{
+.col1 .row{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -50,7 +54,12 @@ body{
     border-radius: 5px;
     
     padding: 1em;
-
+    border: 1px solid black;
+}
+.col1 .row1{
+    flex: 1;
+    align-items: center;
+    justify-content: space-around;
 }
 .col1 .row1 img{
     border-radius: 100%;
@@ -61,8 +70,8 @@ body{
 
 .col1 .row2{
     align-items: start;
-    padding-left: 0;
-    padding-right: 0;
+    /* padding-left: 0; */
+    /* padding-right: 0; */
 }
 .links{
     display: flex;
@@ -70,4 +79,36 @@ body{
     border-bottom: 1px solid black;
     width: 100%;
     padding: 0.25em 0;
+}
+.links.bottom-item{
+    border-bottom: none;
+}
+.links.top-item{
+    border-top: none;
+}
+.col1 .row3{
+    align-items: start;
+}
+.languages-cont{
+    display: flex;
+    align-items: center;
+
+    border-bottom: 1px solid black;
+    width: 100%;
+    padding: 0.25em 0;
+
+}
+#sql-logo{
+    height: 20px;
+}
+
+.col2 .row1{
+    border: 1px solid black;
+    height: 100%;
+    border-radius: 5px;
+    padding: 0.5em;
+    background-color: white;
+}
+.col2 .row1 h1{
+    font-size: 50px;
 }
