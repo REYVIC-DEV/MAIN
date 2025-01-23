@@ -6,7 +6,7 @@
 html,
 body{
     height: 100%;
-    overflow: hidden;
+    /* overflow: hidden; */
     /* background-color: black; */
     background-color: azure;
 }
@@ -15,19 +15,21 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 1em;
 }
 
 .container{
     display: flex;
+    flex-wrap: wrap;
 
     gap: 1em;
 
-    height: 90%;
+    height: 100%;
     width: 90%;
 
     /* border: 1px solid black; */
     border-radius: 5px;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 .col1, 
@@ -37,6 +39,7 @@ body{
     gap: 0.5em;
 
     flex: 50%;
+    height: 100%;
     /* width: 50%; */
     /* border: 1px solid black; */
 }
@@ -60,6 +63,9 @@ body{
     flex: 1;
     align-items: center;
     justify-content: space-around;
+}
+.col1 .row1 h1{
+    text-align: center;
 }
 .col1 .row1 img{
     border-radius: 100%;
@@ -109,6 +115,35 @@ body{
     padding: 0.5em;
     background-color: white;
 }
+.col2 .row1{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
 .col2 .row1 h1{
     font-size: 50px;
+}
+
+.project-container{
+    display: flex;
+    flex-direction: column;
+    /* border: red dashed 1px; */
+    overflow: auto;
+}
+.project-item{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    border-bottom: 1px solid black;
+    padding: 1em 0;
+}
+.project-item:hover{
+    background-color: rgba(128, 128, 128, 0.5);
+}
+.project-item:last-child{
+    border-bottom: none;
+}
+.project-item img{
+    height: 100px;
 }
